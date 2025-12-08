@@ -121,3 +121,22 @@ a[href="#design"] {
   animation-name: --and-transform;
   animation-duration: 1s;
 }
+
+/* Shake animation on the Development link */
+@keyframes --shake {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 1em 0;
+  }
+  100% {
+    translate: -1em 0;
+  }
+}
+
+.shake {
+  animation-name: --shake;
+  animation-duration: 0.15s;
+  animation-iteration-count: 4;
+}

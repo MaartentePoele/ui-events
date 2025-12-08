@@ -45,3 +45,13 @@ function translateHandler() {
 }
 
 andTranslate.addEventListener("animationend", translateHandler);
+
+//Shake animation on the Development link
+const shake = document.querySelector('a[href="#development"]');
+shake.addEventListener("dblclick", shakeHandler);
+
+function shakeHandler() {
+  shake.classList.toggle("shake");
+}
+
+shake.addEventListener("animationend", shakeHandler);
