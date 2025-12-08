@@ -140,3 +140,8 @@ a[href="#design"] {
   animation-duration: 0.15s;
   animation-iteration-count: 4;
 }
+
+/* Linear gradient on the Sprint 5 link */
+.gradient {
+  background: repeating-linear-gradient(45deg, red 0% 10%, green 10% 20%);
+}

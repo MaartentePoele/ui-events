@@ -55,3 +55,13 @@ function shakeHandler() {
 }
 
 shake.addEventListener("animationend", shakeHandler);
+
+//Linear gradient on the Sprint 5 link
+const gradient = document.querySelector('a[href="#sprint-5"');
+gradient.addEventListener("focus", gradientHandler);
+
+function gradientHandler() {
+  gradient.classList.toggle("gradient");
+}
+
+gradient.addEventListener("focusout", gradientHandler);
