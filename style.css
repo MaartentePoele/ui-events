@@ -88,10 +88,36 @@ a[href="#design"] {
 /* Hieronder komen jouw animaties en stijlen */
 
 /* Scale animation on the Frontend link */
-/* a[href="#frontend"] {
-  
-} */
-
 .frontend-scale {
   transform: scale(1.5);
+}
+
+/* Translate animation on the & link */
+@keyframes --and-transform {
+  0% {
+    translate: 0 0;
+  }
+  20% {
+    translate: 0 -1em;
+  }
+  35% {
+    translate: 1em 0;
+  }
+  50% {
+    translate: 0 1em;
+  }
+  65% {
+    translate: -1em 0;
+  }
+  80% {
+    translate: 0 -1em;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+.and-transform {
+  animation-name: --and-transform;
+  animation-duration: 1s;
 }

@@ -35,3 +35,13 @@ scaleLink.addEventListener("click", scaleHandler);
 function scaleHandler() {
   scaleLink.classList.toggle("frontend-scale");
 }
+
+// Translate animation on the & link
+const andTranslate = document.querySelector('a[href="#and"]');
+andTranslate.addEventListener("click", translateHandler);
+
+function translateHandler() {
+  andTranslate.classList.toggle("and-transform");
+}
+
+andTranslate.addEventListener("animationend", translateHandler);
