@@ -80,3 +80,20 @@ const rotate = document.querySelector('a[href="#the"]');
 rotate.addEventListener("mouseout", function () {
   rotate.classList.toggle("rotate");
 });
+
+//Flip the Flow link
+const frontFlip = document.querySelector('a[href="#flow"]');
+frontFlip.addEventListener("mousedown", frontFlipHandler);
+
+function frontFlipHandler() {
+  frontFlip.classList.remove("backflip");
+  frontFlip.classList.add("frontflip");
+}
+
+const backFlip = document.querySelector('a[href="#flow"]');
+backFlip.addEventListener("mouseup", backFlipHandler);
+
+function backFlipHandler() {
+  backFlip.classList.remove("frontflip");
+  backFlip.classList.add("backflip");
+}

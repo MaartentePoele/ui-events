@@ -162,3 +162,36 @@ a[href="#design"] {
   animation-iteration-count: 4;
   animation-timing-function: linear;
 }
+
+/* Flip the Flow link */
+@keyframes --backflip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.backflip {
+  animation-name: --backflip;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes --frontflip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-360deg);
+  }
+}
+
+.frontflip {
+  animation-name: --frontflip;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
