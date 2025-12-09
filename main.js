@@ -57,7 +57,7 @@ function shakeHandler() {
 shake.addEventListener("animationend", shakeHandler);
 
 //Linear gradient on the Sprint 5 link
-const gradient = document.querySelector('a[href="#sprint-5"');
+const gradient = document.querySelector('a[href="#sprint-5"]');
 gradient.addEventListener("focus", gradientHandler);
 
 function gradientHandler() {
@@ -65,3 +65,12 @@ function gradientHandler() {
 }
 
 gradient.addEventListener("focusout", gradientHandler);
+
+//textContent op de Fix link
+const fix = document.querySelector('a[href="#fix"]');
+fix.addEventListener("mouseover", function () {
+  fix.textContent = "Gefixt!";
+});
+fix.addEventListener("mouseout", function () {
+  fix.textContent = "Fix";
+});
