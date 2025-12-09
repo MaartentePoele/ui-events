@@ -145,3 +145,20 @@ a[href="#design"] {
 .gradient {
   background: repeating-linear-gradient(45deg, red 0% 10%, green 10% 20%);
 }
+
+/* Rotate on the The link */
+@keyframes --rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation-name: --rotate;
+  animation-duration: 0.25s;
+  animation-iteration-count: 4;
+  animation-timing-function: linear;
+}

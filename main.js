@@ -74,3 +74,9 @@ fix.addEventListener("mouseover", function () {
 fix.addEventListener("mouseout", function () {
   fix.textContent = "Fix";
 });
+
+//Rotate on the The link
+const rotate = document.querySelector('a[href="#the"]');
+rotate.addEventListener("mouseout", function () {
+  rotate.classList.toggle("rotate");
+});
