@@ -125,3 +125,17 @@ document.addEventListener("keyup", function (event) {
     user.classList.add("violet");
   }
 });
+
+//Scaling with keyboard on the Interface link
+const interface = document.querySelector('a[href="#interface"]');
+document.addEventListener("keydown", function (event) {
+  if (event.key === "x") {
+    interface.classList.add("interface-scale");
+  }
+});
+
+document.addEventListener("keyup", function (event) {
+  if (event.key === "x") {
+    interface.classList.remove("interface-scale");
+  }
+});

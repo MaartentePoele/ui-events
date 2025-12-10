@@ -224,3 +224,20 @@ a[href="#design"] {
 .violet {
   background-color: violet;
 }
+
+/* Scaling with keyboard on the Interface link */
+@keyframes --interface-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(10);
+  }
+}
+
+.interface-scale {
+  animation-name: --interface-scale;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
