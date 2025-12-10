@@ -97,3 +97,31 @@ function backFlipHandler() {
   backFlip.classList.remove("frontflip");
   backFlip.classList.add("backflip");
 }
+
+//Change color with keyboard on the User link
+const user = document.querySelector('a[href="#user"]');
+document.addEventListener("keyup", function (event) {
+  console.log(event.key);
+  if (event.key === "r") {
+    user.className = "";
+    user.classList.add("red");
+  } else if (event.key === "o") {
+    user.className = "";
+    user.classList.add("orange");
+  } else if (event.key === "y") {
+    user.className = "";
+    user.classList.add("yellow");
+  } else if (event.key === "g") {
+    user.className = "";
+    user.classList.add("green");
+  } else if (event.key === "b") {
+    user.className = "";
+    user.classList.add("blue");
+  } else if (event.key === "p") {
+    user.className = "";
+    user.classList.add("purple");
+  } else if (event.key === "v") {
+    user.className = "";
+    user.classList.add("violet");
+  }
+});

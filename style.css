@@ -195,3 +195,32 @@ a[href="#design"] {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+
+/* Change color with keyboard on the User link */
+.red {
+  background: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.violet {
+  background-color: violet;
+}
