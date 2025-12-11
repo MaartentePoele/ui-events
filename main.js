@@ -159,7 +159,6 @@ document.addEventListener("keyup", function (event) {
 // });
 
 //Scaling with mouse scroll on the Events link
-
 const events = document.querySelector('a[href="#events"]');
 
 let fontSize = 32;
@@ -171,4 +170,19 @@ events.addEventListener("wheel", function (wheelEvent) {
     fontSize = fontSize - 1;
   }
   events.style.fontSize = fontSize + "px";
+});
+
+//Gradient following mouse on the Interaction link
+const interaction = document.querySelector('a[href="#interaction"]');
+
+interaction.addEventListener("mousemove", function (event) {
+  interaction.classList.add("hover");
+  let x = event.offsetX;
+  let y = event.offsetY;
+  interaction.style.setProperty("--x", x + "px");
+  interaction.style.setProperty("--y", y + "px");
+});
+
+interaction.addEventListener("mouseout", function () {
+  interaction.classList.remove("hover");
 });

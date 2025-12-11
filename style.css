@@ -275,4 +275,14 @@ a[href="#design"] {
   animation-timing-function: linear;
 } */
 
-/* Scaling with mouse scroll on the Events link */
+/* Gradient following mouse on the Interaction link */
+.hover {
+  --x: 50px;
+  --y: 50px;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    green 5%,
+    transparent 40%,
+    transparent 100%
+  );
+}
