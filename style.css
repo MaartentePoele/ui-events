@@ -241,3 +241,38 @@ a[href="#design"] {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+
+/* Scaling with keyboard on the Interface link Dylan */
+/* @keyframes --interface-scale {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 10;
+  }
+}
+
+@keyframes down {
+  0% {
+    scale: var(--aniScale, 10);
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.interface-scale {
+  animation-name: --interface-scale;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.interface-down {
+  animation-name: down;
+  animation-duration: var(--aniTime, 5s);
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+} */
+
+/* Scaling with mouse scroll on the Events link */

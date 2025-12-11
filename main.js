@@ -101,7 +101,6 @@ function backFlipHandler() {
 //Change color with keyboard on the User link
 const user = document.querySelector('a[href="#user"]');
 document.addEventListener("keyup", function (event) {
-  console.log(event.key);
   if (event.key === "r") {
     user.className = "";
     user.classList.add("red");
@@ -138,4 +137,38 @@ document.addEventListener("keyup", function (event) {
   if (event.key === "x") {
     interface.classList.remove("interface-scale");
   }
+});
+
+//Scaling with keyboard on the Interface link Dylan
+// document.addEventListener("keyup", function (event) {
+//   if (event.key === "x") {
+//     let curScale = getComputedStyle(interface).getPropertyValue("scale");
+//     let animationTime = (curScale / 10) * 5;
+//     document.documentElement.style.setProperty(
+//       "--aniTime",
+//       animationTime + "s"
+//     );
+//     document.documentElement.style.setProperty("--aniScale", curScale);
+//     interface.classList.add("interface-down");
+//     interface.classList.remove("interface-scale");
+
+//     interface.addEventListener("animationend", () => {
+//       interface.classList.remove("interface-down");
+//     });
+//   }
+// });
+
+//Scaling with mouse scroll on the Events link
+
+const events = document.querySelector('a[href="#events"]');
+
+let fontSize = 32;
+
+events.addEventListener("wheel", function (wheelEvent) {
+  if (wheelEvent.deltaY < 0) {
+    fontSize = fontSize + 1;
+  } else {
+    fontSize = fontSize - 1;
+  }
+  events.style.fontSize = fontSize + "px";
 });
