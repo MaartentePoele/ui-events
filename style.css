@@ -46,6 +46,7 @@ li {
 
 /* UI Event Classes */
 
+/* MARK: Design
 /* Jump animation on the Design link */
 a[href="#design"] {
   position: relative;
@@ -285,4 +286,24 @@ a[href="#design"] {
     transparent 40%,
     transparent 100%
   );
+}
+
+/* ADVANCED LAYOUTS */
+
+/* All other links fall when User flow link is clicked */
+@keyframes --fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100rem) rotate(3turn);
+  }
+}
+
+.fall {
+  animation-name: --fall;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0.25s;
 }

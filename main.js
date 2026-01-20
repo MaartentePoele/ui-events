@@ -186,3 +186,23 @@ interaction.addEventListener("mousemove", function (event) {
 interaction.addEventListener("mouseout", function () {
   interaction.classList.remove("hover");
 });
+
+// ADVANCED EVENTS
+
+//All other links fall when User flow link is clicked
+const allLinks = document.querySelectorAll("a");
+const userFlow = document.querySelector('a[href="#user-flow"]');
+
+userFlow.addEventListener("pointerover", function () {
+  allLinks.forEach(function (allLink) {
+    if (userFlow != allLink) {
+      allLink.classList.add("fall");
+    }
+  });
+});
+
+userFlow.addEventListener("pointerleave", function () {
+  allLinks.forEach(function (allLink) {
+    allLink.classList.remove("fall");
+  });
+});
